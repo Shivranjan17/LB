@@ -14,7 +14,7 @@ CheckPerfect(int iNo)
     for (iCnt = 1; iCnt <=(iNo / 2); iCnt++)
     {
         if ((iNo %iCnt)==0 ){
-            iSum = iSum = iCnt;
+            iSum = iSum + iCnt;
 
         }
     }
