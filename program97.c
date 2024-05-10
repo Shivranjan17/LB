@@ -4,6 +4,7 @@
 3       3       3
 4       4       4
 */
+//96 and 97 is same
 #include<stdio.h>
 
 void Display(int iRow ,int iCol)
