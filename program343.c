@@ -26,7 +26,7 @@ void InsertFirst(PPNODE First , int No)
 
     }
 
-}
+}//O(1)
 void InsertLast(PPNODE First , int No)
 {
     PNODE newn = NULL;
@@ -51,7 +51,7 @@ void InsertLast(PPNODE First , int No)
 
     }
 
-}
+}//O(N)
 int Display(PNODE First )
 {
     while(First != NULL)
@@ -61,7 +61,7 @@ int Display(PNODE First )
     }
     printf("NULL\n");
 
-}
+}//O(N)
 int Count(PNODE First )
 {
     int iCnt = 0;
@@ -73,7 +73,7 @@ int Count(PNODE First )
   return iCnt;
 
 
-}
+}//O(N)
 
 int main(int argc, char **argv)
 {
