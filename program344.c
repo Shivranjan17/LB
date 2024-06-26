@@ -74,6 +74,56 @@ int Count(PNODE First )
 
 
 }//O(N)
+void DeleteFirst(PPNODE First)//case 1
+{
+    PNODE temp = NULL;
+    if (*First == NULL)
+    {
+         printf("unable to delete as Linked List is empty\n");
+         return;
+      
+
+    }
+    else if ((*First)->next == NULL)//case 2
+    {
+        free(*First);
+        *First = NULL;
+       
+
+    }
+    else//case 3 see from diagram all cases 
+    {
+        temp = *First;
+        *First = (*First)->next;
+        free(temp);
+
+       
+
+    }
+}
+
+void DeleteLast(PPNODE First)//case 1
+{
+    if (*First == NULL)
+    {
+         printf("unable to delete as Linked List is empty\n");
+         return;
+      
+
+    }
+    else if ((*First)->next == NULL)//case 2
+    {
+        free(*First);
+        *First = NULL;
+       
+
+    }
+    else//case 3 see from diagram all cases 
+    {
+       
+
+    }
+}
 
 int main(int argc, char **argv)
 {
@@ -92,16 +142,11 @@ int main(int argc, char **argv)
     iRet = Count(Head);
     printf("Number of elements are : %d\n",iRet);
 
+    DeleteFirst(&Head);
+    Display(Head);
+    iRet = Count(Head);
+    printf("Number of elements are : %d\n",iRet);
+
     return 0;
 }
 
-/*----------------------------------------------------------------
-InsertFirst
-
-1:Allocate4 memory for node 
-2:Initialise that node
-3:Check if linked list is empty or not 
-4:if LL is empty store the address of new node in the Heap pointer through First
-5:if LL is not empty then store the address of old first node in the next of new node
-6:Update the Head accordingly
-*/
