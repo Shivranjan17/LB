@@ -3,7 +3,8 @@
         "stdbool.h": "c",
         "PROGRAM68.C": "cpp",
         "string.h": "c",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "ostream": "cpp"
     },
     "C_Cpp.errorSquiggles": "enabled"
 }
